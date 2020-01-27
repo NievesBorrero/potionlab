@@ -1,0 +1,8 @@
+node_modules
+media/
+.coverage
+coverage/
+.vscode/
+.DS_Store/
+static/.DS_Store
+static/images/.DS_Store

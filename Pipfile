@@ -1,0 +1,42 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+
+[packages]
+click = "==6.7"
+django-debug-toolbar = "==1.10"
+django-jet = "==1.0.8"
+django-model-utils = "==3.1.2"
+djangorestframework = "==3.8.2"
+djangorestframework-jwt = "==1.11.0"
+gunicorn = "==19.9.0"
+psycopg2 = "==2.7.5"
+python-dotenv = "==0.9.1"
+django-sendgrid-v5 = "*"
+kombu = "==4.2.1"
+django-storages = "==1.7.1"
+boto3 = "==1.9.131"
+raven = "==6.10.0"
+requests = "==2.21.0"
+django-imagekit = "==4.0.2"
+django-import-export = "==1.2.0"
+codacy-coverage = "*"
+whitenoise = "==4.1.2"
+dj-database-url = "==0.5.0"
+coverage = "==4.5.3"
+flake8 = "==3.7.7"
+djangorestframework-csv = "==2.1.0"
+newrelic = "==4.16.1.117"
+Django = "==2.0"
+Pillow = "==6.0.0"
+model_mommy = "==1.6.0"
+weasyprint = "*"
+python-http-client = "*"
+scout-apm = "*"
+
+[requires]
+python_version = "3.7"

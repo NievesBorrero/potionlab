@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+  postgres:
+    image: postgres:10
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: "grimoire"
+
+  backend:
+    build: .
+    image: grimoire_server
+    command: sh ./entrypoint.sh
+    environment:
+      REDIS_HOST: redis
+      DJANGO_DEBUG: 1
+      ALLOWED_HOSTS: "127.0.0.1,localhost,0.0.0.0"
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres

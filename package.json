@@ -1,0 +1,103 @@
+{
+  "name": "grimoire",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --mode development",
+    "test": "jest",
+    "test:generate-output": "jest --json --outputFile=jest-test-results.json",
+    "coverage": "jest --coverage",
+    "build": "webpack --mode production",
+    "storybook": "start-storybook -s ./ -p 6006",
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages",
+    "test-with-coverage": "jest --coverage && cat ./coverage/lcov.info | codacy-coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheNeonProject/grimoire.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFiles": [
+      "./src/setupTests.js"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.3.4",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.0.5",
+    "@storybook/addon-knobs": "^5.0.5",
+    "@storybook/addon-links": "^5.0.3",
+    "@storybook/addons": "^5.0.3",
+    "@storybook/react": "^5.0.3",
+    "@storybook/storybook-deployer": "^2.8.1",
+    "babel-jest": "^24.1.0",
+    "babel-loader": "^8.0.5",
+    "babel-polyfill": "^6.26.0",
+    "connected-react-router": "^6.3.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.9.1",
+    "enzyme-to-json": "^3.3.5",
+    "eslint": "^5.15.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.4.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.1.0",
+    "jest-css-modules": "^2.1.0",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.2",
+    "react-calendar": "^2.19.2",
+    "react-dom": "^16.8.2",
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-mock-store": "^1.5.3",
+    "redux-saga": "^1.0.1",
+    "sass-loader": "^7.3.1",
+    "storybook-react-router": "^1.0.3",
+    "uuid": "^3.3.2",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-s3-plugin": "^1.0.3"
+  },
+  "dependencies": {
+    "carbon-components": "^9.87.0",
+    "carbon-components-react": "^6.111.1",
+    "carbon-icons": "^7.0.7",
+    "codacy-coverage": "^3.4.0",
+    "css-loader": "^3.4.2",
+    "draft-js": "^0.11.3",
+    "draftjs-to-html": "^0.9.0",
+    "html-to-draftjs": "^1.5.0",
+    "jwt-decode": "^2.2.0",
+    "moment": "^2.24.0",
+    "raven-for-redux": "^1.4.0",
+    "raven-js": "^3.27.0",
+    "react-draft-wysiwyg": "^1.14.0",
+    "react-router": "^5.1.2",
+    "react-router-hash-link": "^1.2.1",
+    "storybook": "^1.0.0",
+    "style-loader": "^1.1.3",
+    "styled-components": "^5.0.0"
+  }
+}
