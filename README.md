@@ -3,6 +3,8 @@
 This is a project to explain React-Redux in the [Sysmana 2020](https://informatica.iesgrancapitan.org/sysmanas/sysmana-xii/) to support the presentation of
 "React for Muggles: Redux, Storybook and other tricks to do magic on the frontend"
 
+You can see the slides [here](https://docs.google.com/presentation/d/1RiTXBW6SjxE0pisEZif36dDxcKB83ZIsMzZ571S-zxA/edit?usp=sharing)
+
 ## Installation
 
 ### Backend
